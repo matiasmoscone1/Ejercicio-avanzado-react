@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { CountContext } from "./CountContextProvider";
 
 
 const ComponentB = () => {
+
+    const { state, dispatch } = useContext(CountContext);
 
     const ComponentD = () => {
         return(<>
