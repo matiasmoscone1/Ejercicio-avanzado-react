@@ -9,9 +9,11 @@ const ComponentC = () => {
     
     const ComponentF = () => {
         return(<>
-            <button>Increment</button>
-            <button>Decrement</button>
-            <button>Reset</button>
+            <div className="component-items">
+                <button onClick={() => dispatch({type: "increment"})}>Increment</button>
+                <button onClick={() => dispatch({type: "decrement"})}>Decrement</button>
+                <button onClick={() => dispatch({type: "reset"})}>Reset</button>
+            </div>
         </>);
     }
 

@@ -8,9 +8,11 @@ function App() {
   return (
     <>
       <CountContextProvider>
-        <ComponentA/>
-        <ComponentB/>
-        <ComponentC/>
+        <div className="component-container">
+          <ComponentA/>
+          <ComponentB/>
+          <ComponentC/>
+        </div>
       </CountContextProvider>
     </>
   )
